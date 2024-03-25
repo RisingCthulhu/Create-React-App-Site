@@ -35,18 +35,6 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-    ttq.track('ViewContent', {
-        "contents": [
-            {
-                "content_id": `${Date.now() * Math.random()}`, // string. ID of the product. Example: "1077218".
-                "content_type": "product", // string. Either product or product_group.
-                "content_name": "main_page" // string. The name of the page or product. Example: "shirt".
-            }
-        ],
-        // "value": "<content_value>", // number. Value of the order or items sold. Example: 100.
-        // "currency": "<content_currency>" // string. The 4217 currency code. Example: "USD".
-    });
-    
     return <RouterProvider router={router} />;
 }
 
