@@ -7,7 +7,7 @@ getToken(messaging, { vapidKey: '<YOUR_PUBLIC_VAPID_KEY_HERE>' }).then((currentT
   if (currentToken) {
     // Send the token to your server and update the UI if necessary
     // ...
-	console.log(currentToken);
+	console.log('current token (script_from_docs.js): ', currentToken);
   } else {
     // Show permission request UI
     console.log('No registration token available. Request permission to generate one.');
